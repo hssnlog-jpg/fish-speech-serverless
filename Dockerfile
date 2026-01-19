@@ -1,5 +1,5 @@
 # 1. صورة النظام الأساسية (بايثون + كودا)
-FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-runtime
+FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
 # منع الأسئلة أثناء التثبيت
 ENV DEBIAN_FRONTEND=noninteractive
