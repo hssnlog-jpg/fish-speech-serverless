@@ -8,6 +8,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1. هذه هي الخطوة الجديدة: تنظيف القرص لتوفير مساحة
+      - name: Free Disk Space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: true
+          android: true
+          dotnet: true
+          haskell: true
+          large-packages: true
+          docker-images: true
+          swap-storage: true
+
       - name: Check out the repo
         uses: actions/checkout@v4
 
